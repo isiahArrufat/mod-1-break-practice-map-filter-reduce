@@ -13,3 +13,5 @@ Run tests either by using `npm test` or if, for example you are testing the `src
 Use each file in the `src` folder to practice `.map`, `.filter`, and `.reduce`
 
 Solutions can be found on the `solution` branch
+
+Good Luck! 🍀
