@@ -5,9 +5,7 @@
  * @param {string} char - The character that the string must contain.
  * @returns {string[]} A new array with strings that meet the criteria.
  */
-function filterByLengthAndCharacter(arr, length, char) {
-  return arr.filter((str) => str.length >= length && str.includes(char));
-}
+function filterByLengthAndCharacter(arr, length, char) {}
 
 /**filterObjectsByKeyValue
  * Filters an array of objects based on a key-value pair.
@@ -32,8 +30,6 @@ function filterByLengthAndCharacter(arr, length, char) {
       { a: 1, b: 4 }
     ])
  */
-function filterObjectsByKeyValue(arr, key, value) {
-  return arr.filter((obj) => obj[key] === value);
-}
+function filterObjectsByKeyValue(arr, key, value) {}
 
 module.exports = { filterByLengthAndCharacter, filterObjectsByKeyValue };

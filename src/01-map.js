@@ -29,9 +29,7 @@ function doubleAndAdd(arr, value) {
       'BANANA FRUIT'
     ]
  */
-function concatenateAndUppercase(arr, str) {
-  return arr.map((item) => (item + str).toUpperCase());
-}
+function concatenateAndUppercase(arr, str) {}
 
 /**convertToObjects
  * Converts an array of strings to an array of objects with properties extracted from the strings.
@@ -45,14 +43,10 @@ function concatenateAndUppercase(arr, str) {
  * [ { name: 'John' }, { age: '30' }, { city: 'New York' } ]
  */
 
-function convertToObjects(arr) {
-  return arr.map((str) => {
-    const [key, value] = str.split(':');
-    return { [key]: value };
-  });
-}
+function convertToObjects(arr) {}
 
 /**transformToASCII
+ * https://www.asciitable.com/
  * Transforms each character in the provided array of strings to its ASCII code.
  * @param {string[]} arr - The array of strings to be transformed.
  * @returns {number[][]} A new array with each string transformed to an array of ASCII codes.
@@ -62,9 +56,7 @@ function convertToObjects(arr) {
  * [ [ 100, 111, 103 ], [ 99, 97, 116 ] ]
  */
 
-function transformToASCII(arr) {
-  return arr.map((str) => str.split('').map((char) => char.charCodeAt(0)));
-}
+function transformToASCII(arr) {}
 
 module.exports = {
   convertToObjects,
