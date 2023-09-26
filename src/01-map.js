@@ -70,11 +70,15 @@ function convertToObjects(arr) {
  * [ [ 100, 111, 103 ], [ 99, 97, 116 ] ]
  */
 
+
 function transformToASCII(arr) {
+  // Global Execution Context  (1st in the code block)
   const codeResult = arr.map((str) => {
+    // Function Execution context(local) 2nd in the code block
     const asciiCodes = [];
 
     for(let i = 0; i < str.length; i++) {
+//  for loop Excution Context    3rd in the code block
       const char = str.charCodeAt(i);
       asciiCodes.push(char);
     }
